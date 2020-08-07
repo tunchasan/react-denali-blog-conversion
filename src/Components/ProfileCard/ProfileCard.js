@@ -26,11 +26,11 @@ function ProfileCard() {
         <p className="profileText">Featured Posts:</p>
 
         <div className="blogPostsContainer">
-          <a className="profileBlogPost">
+          <a className="profileBlogPost" href="/">
             According a funnily until pre-set or arrogant well cheerful
           </a>
 
-          <a className="profileBlogPost">
+          <a className="profileBlogPost" href="/">
             Overlaid the jeepers uselessly much excluding
           </a>
         </div>
@@ -38,16 +38,32 @@ function ProfileCard() {
         <div className="underlineSeperator"></div>
 
         <div className="socialContianer">
-          <a href="http://www.facebook.com" target="_blank">
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Facebook className="socialIcon" />
           </a>
-          <a href="http://www.facebook.com" target="_blank">
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Instagram className="socialIcon" />
           </a>
-          <a href="http://www.facebook.com" target="_blank">
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Twitter className="socialIcon" />
           </a>
-          <a href="http://www.facebook.com" target="_blank">
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedIn className="socialIcon" />
           </a>
         </div>
