@@ -22,10 +22,17 @@
   margin-left: 20px;
 }
 
-.info h1 {
+.info a {
+  color: #333;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 600;
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: #aaa;
+  transition: color 0.2s ease;
 }
 
 .details {
@@ -70,9 +77,11 @@
 
 .content a {
   color: #aaa;
+  font-size: 14px;
 }
 
 .content a:hover {
   color: #333;
   transition: color 0.2s;
+  font-size: 14px;
 }

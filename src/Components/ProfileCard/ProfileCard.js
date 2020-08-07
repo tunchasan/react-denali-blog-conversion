@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Avatar, Typography as p } from "@material-ui/core";
 import { Facebook, Instagram, Twitter, LinkedIn } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 import "./ProfileCard.css";
 
@@ -26,13 +27,12 @@ function ProfileCard() {
         <p className="profileText">Featured Posts:</p>
 
         <div className="blogPostsContainer">
-          <a className="profileBlogPost" href="/">
+          <Link className="profileBlogPost" to="/">
             According a funnily until pre-set or arrogant well cheerful
-          </a>
-
-          <a className="profileBlogPost" href="/">
+          </Link>
+          <Link className="profileBlogPost" to="/">
             Overlaid the jeepers uselessly much excluding
-          </a>
+          </Link>
         </div>
 
         <div className="underlineSeperator"></div>
