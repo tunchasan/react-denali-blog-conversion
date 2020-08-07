@@ -1,0 +1,99 @@
+.profileCard {
+  width: 25%;
+  padding: 20px;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.avatar {
+  width: 126px !important;
+  height: 126px !important;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profileText {
+  margin-bottom: 10px;
+  line-height: 145%;
+  text-align: left;
+}
+
+.underlineSeperator {
+  width: 90px;
+  height: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #c7c7c7;
+}
+
+.blogPostsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileBlogPost {
+  font-family: Lato, sans-serif;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.profileBlogPost:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.socialContianer {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.socialContianer a {
+  opacity: 0.36;
+  text-decoration: none;
+  color: #333;
+}
+
+.socialContianer a:hover {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.socialIcon {
+  font-size: 20px !important;
+}
+
+.profileBuiltByText {
+  margin-bottom: 0px;
+  color: #aaa;
+  font-size: 10px;
+  text-align: left;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.profileBuiltByTextLink {
+  margin-bottom: 0px;
+  color: #aaa;
+  font-size: 10px;
+  text-align: left;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.profileBuiltByTextLink:hover {
+  color: #333;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.builtWithSection {
+  display: flex;
+}

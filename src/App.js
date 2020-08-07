@@ -15,9 +15,9 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <Header />
+        {/* <Header /> */}
         <ProfileCard />
-        <Switch>
+        {/* <Switch>
           <Route path="/about">
             <AboutCard />
           </Route>
@@ -27,7 +27,7 @@ function App() {
           <Route path="/">
             <BlogList />
           </Route>
-        </Switch>
+        </Switch> */}
       </Router>
     </div>
   );
