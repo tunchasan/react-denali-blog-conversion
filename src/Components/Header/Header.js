@@ -7,7 +7,7 @@ import "./Header.css";
 function Header() {
   return (
     <div>
-      <Card>
+      <Card variant="outlined">
         <div className="headerContent">
           <div className="logoContainer">
             <Typography component="h1">
