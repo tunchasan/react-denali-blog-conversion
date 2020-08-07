@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.thumbnail img {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+}
+
+.info {
+  width: 70%;
+  margin-left: 20px;
+}
+
+.info h1 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.details {
+  color: #aaa;
+  display: flex;
+  margin: 10px 0;
+}
+
+.details h2 {
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.details a {
+  cursor: pointer;
+  font-weight: 700;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.details a:hover {
+  color: #333;
+  transition: color 0.2s;
+}
+
+.content {
+  color: #aaa;
+  display: flex;
+  text-decoration: none;
+}
+
+.content p {
+  line-height: 22px;
+  color: #aaa;
+}
+
+.content a {
+  color: #aaa;
+}
+
+.content a:hover {
+  color: #333;
+  transition: color 0.2s;
+}

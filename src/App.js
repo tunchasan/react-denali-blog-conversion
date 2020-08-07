@@ -16,7 +16,6 @@ function App() {
     <div className="app">
       <Router>
         <Header />
-
         <div className="appContent">
           <div className="appNarrowContainer">
             <div className="appProfile">
@@ -31,7 +30,16 @@ function App() {
                   <ContactCard />
                 </Route>
                 <Route path="/">
-                  <BlogList />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
                 </Route>
               </Switch>
             </div>
