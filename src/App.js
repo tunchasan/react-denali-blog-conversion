@@ -14,8 +14,7 @@ import {
 function App() {
   return (
     <div className="app">
-      <Header />
-      {/* <Router>
+      <Router>
         <Header />
         <ProfileCard />
         <Switch>
@@ -29,7 +28,7 @@ function App() {
             <BlogList />
           </Route>
         </Switch>
-      </Router> */}
+      </Router>
     </div>
   );
 }
