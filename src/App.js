@@ -15,19 +15,28 @@ function App() {
   return (
     <div className="app">
       <Router>
-        {/* <Header /> */}
-        <ProfileCard />
-        {/* <Switch>
-          <Route path="/about">
-            <AboutCard />
-          </Route>
-          <Route path="/contact">
-            <ContactCard />
-          </Route>
-          <Route path="/">
-            <BlogList />
-          </Route>
-        </Switch> */}
+        <Header />
+
+        <div className="appContent">
+          <div className="appNarrowContainer">
+            <div className="appProfile">
+              <ProfileCard />
+            </div>
+            <div className="appPanel">
+              <Switch>
+                <Route path="/about">
+                  <AboutCard />
+                </Route>
+                <Route path="/contact">
+                  <ContactCard />
+                </Route>
+                <Route path="/">
+                  <BlogList />
+                </Route>
+              </Switch>
+            </div>
+          </div>
+        </div>
       </Router>
     </div>
   );

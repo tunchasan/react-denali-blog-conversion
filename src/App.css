@@ -3,3 +3,25 @@
   font-size: 14px;
   font-family: "Lato", sans-serif;
 }
+
+.appContent {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.appNarrowContainer {
+  width: 100%;
+  max-width: 940px;
+  display: flex;
+  justify-content: center;
+}
+
+.appProfile {
+  width: 30%;
+}
+
+.appPanel {
+  width: 70%;
+}
