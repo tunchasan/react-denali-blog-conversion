@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Card, Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import "./AboutCard.css";
 
 function AboutCard() {
@@ -28,9 +29,12 @@ function AboutCard() {
             nulla non metus auctor fringilla.
           </p>
         </div>
-        <Button className="getInTouch" variant="contained">
-          Get in touch
-        </Button>
+
+        <Link style={{ textDecoration: "none" }} to="/contact">
+          <Button className="getInTouch" variant="contained">
+            Get in touch
+          </Button>
+        </Link>
       </div>
     </Card>
   );
