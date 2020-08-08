@@ -7,34 +7,12 @@ import "./App.css";
 import {
   Header,
   AboutCard,
-  BlogCard,
   BlogList,
   ContactCard,
   ProfileCard,
 } from "./Components";
 
 function App() {
-  const renderBlogCards = () => {
-    return blogPosts.map(
-      (
-        { title, timeStamp, category, imageURL, imageALT, description },
-        index
-      ) => {
-        return (
-          <BlogCard
-            key={index}
-            title={title}
-            timeStamp={timeStamp}
-            category={category}
-            imageURL={imageURL}
-            imageALT={imageALT}
-            description={description}
-          />
-        );
-      }
-    );
-  };
-
   return (
     <div className="app">
       <Router>
@@ -52,7 +30,9 @@ function App() {
                 <Route path="/contact">
                   <ContactCard />
                 </Route>
-                <Route path="/">{renderBlogCards()}</Route>
+                <Route path="/">
+                  <BlogList blogPosts={blogPosts} />
+                </Route>
               </Switch>
             </div>
           </div>
