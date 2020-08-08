@@ -1,5 +1,6 @@
 export const blogPosts = [
   {
+    id: 0,
     title:
       "Wherever far wow thus a squirrel raccoon jeez jaguar this from along",
     timeStamp: "AUGUST 7, 2020",
@@ -11,6 +12,7 @@ export const blogPosts = [
       'The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind',
   },
   {
+    id: 1,
     title: "Coffee sugar, chicory seasonal espresso barista americano",
     timeStamp: "AUGUST 7, 2020",
     category: "MUSIC",
@@ -21,6 +23,7 @@ export const blogPosts = [
       "Arista, percolator, cream, aromatic, fair trade, breve body instant lungo blue mountain cappuccino. Americano aroma mug espresso latte crema milk redeye acerbic. Galão robusta instant, decaffeinated, so fair trade wings.",
   },
   {
+    id: 2,
     title: "According a funnily until pre-set or arrogant well cheerful",
     timeStamp: "AUGUST 7, 2020",
     category: "MUSIC",
@@ -31,6 +34,7 @@ export const blogPosts = [
       "Single shot cultivar beans as chicory caffeine. Medium brewed, milk extra that froth pumpkin spice mocha. Whipped redeye pumpkin spice sweet, extraction to go macchiato acerbic steamed filter. Robusta grounds decaffeinated.",
   },
   {
+    id: 3,
     title: "Overlaid the jeepers uselessly much excluding",
     timeStamp: "AUGUST 7, 2020",
     category: "TECH",
@@ -41,6 +45,7 @@ export const blogPosts = [
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
   },
   {
+    id: 4,
     title: "Coffee variety macchiato, as organic ut variety caffeine americano",
     timeStamp: "AUGUST 7, 2020",
     category: "TRAVEL",
@@ -51,3 +56,14 @@ export const blogPosts = [
       "Saucer, crema carajillo, bar, mocha medium, latte cappuccino and espresso acerbic to go. Coffee, irish foam turkish coffee blue mountain seasonal. Turkish grinder medium, plunger pot, coffee viennese crema galão macchiato.",
   },
 ];
+
+const getfeaturedPosts = () => {
+  const randomElement01 =
+    blogPosts[Math.floor(Math.random() * blogPosts.length)];
+  const newBlogPosts = blogPosts.filter((bp) => bp !== randomElement01);
+  const randomElement02 =
+    newBlogPosts[Math.floor(Math.random() * newBlogPosts.length)];
+  return [randomElement01, randomElement02];
+};
+
+export const featuredPosts = getfeaturedPosts();

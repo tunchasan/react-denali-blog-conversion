@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { getSlugURL } from "../../helper";
 
 import "./BlogCard.css";
 
@@ -19,7 +20,7 @@ function BlogCard({
           <img src={imageURL} alt={imageALT} />
         </div>
         <div className="info">
-          <Link to="/">{title}</Link>
+          <Link to={`/${getSlugURL(title)}`}>{title}</Link>
           <div className="details">
             <h2>{timeStamp} |&nbsp;</h2>
             <Link to="/">{category}</Link>
@@ -27,7 +28,7 @@ function BlogCard({
           <div className="content">
             <p>
               {description}&nbsp;
-              <Link to="/">Read more...</Link>
+              <Link to={`/${getSlugURL(title)}`}>Read more...</Link>
             </p>
           </div>
         </div>

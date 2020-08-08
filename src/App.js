@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import { blogPosts } from "./Data/blogPosts";
+import { blogPosts, featuredPosts } from "./Data/blogPosts";
 import "./App.css";
 
 import {
@@ -20,7 +20,7 @@ function App() {
         <div className="appContent">
           <div className="appNarrowContainer">
             <div className="appProfile">
-              <ProfileCard />
+              <ProfileCard featuredPosts={featuredPosts} />
             </div>
             <div className="appPanel">
               <Switch>

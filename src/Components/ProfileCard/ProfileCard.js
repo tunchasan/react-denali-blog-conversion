@@ -1,11 +1,24 @@
 import React from "react";
-import { Card, Avatar, Typography as p } from "@material-ui/core";
+import { Card, Avatar } from "@material-ui/core";
 import { Facebook, Instagram, Twitter, LinkedIn } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import { getSlugURL } from "../../helper";
 
 import "./ProfileCard.css";
 
-function ProfileCard() {
+function ProfileCard({ featuredPosts }) {
+  const renderFeaturedPosts = () => {
+    return featuredPosts.map((fp) => (
+      <Link
+        key={fp.id}
+        className="profileBlogPost"
+        to={`/${getSlugURL(fp.title)}`}
+      >
+        {fp.title}
+      </Link>
+    ));
+  };
+
   return (
     <div>
       <Card className="profileCard" variant="outlined">
@@ -26,14 +39,7 @@ function ProfileCard() {
 
         <p className="profileText">Featured Posts:</p>
 
-        <div className="blogPostsContainer">
-          <Link className="profileBlogPost" to="/">
-            According a funnily until pre-set or arrogant well cheerful
-          </Link>
-          <Link className="profileBlogPost" to="/">
-            Overlaid the jeepers uselessly much excluding
-          </Link>
-        </div>
+        <div className="blogPostsContainer">{renderFeaturedPosts()}</div>
 
         <div className="underlineSeperator"></div>
 
