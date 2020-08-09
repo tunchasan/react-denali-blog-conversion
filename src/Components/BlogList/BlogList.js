@@ -3,7 +3,7 @@ import React from "react";
 import { BlogCard } from "../../Components";
 import "./BlogList.css";
 
-function BlogList({ blogPosts }) {
+function BlogList({ blogPosts, onPostClick }) {
   const renderBlogCards = () => {
     return blogPosts.map(
       (
@@ -12,6 +12,7 @@ function BlogList({ blogPosts }) {
       ) => {
         return (
           <BlogCard
+            onPostClick={onPostClick}
             key={index}
             title={title}
             timeStamp={timeStamp}

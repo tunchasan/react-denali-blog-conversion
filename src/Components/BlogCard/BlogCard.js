@@ -12,6 +12,7 @@ function BlogCard({
   imageURL,
   imageALT,
   description,
+  onPostClick,
 }) {
   return (
     <div>
@@ -20,7 +21,9 @@ function BlogCard({
           <img src={imageURL} alt={imageALT} />
         </div>
         <div className="info">
-          <Link to={`/${getSlugURL(title)}`}>{title}</Link>
+          <Link onClick={() => onPostClick(title)} to={`/${getSlugURL(title)}`}>
+            {title}
+          </Link>
           <div className="details">
             <h2>{timeStamp} |&nbsp;</h2>
             <Link to="/">{category}</Link>

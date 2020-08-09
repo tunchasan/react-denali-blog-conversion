@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import { blogPosts, featuredPosts } from "./Data/blogPosts";
@@ -13,6 +13,12 @@ import {
 } from "./Components";
 
 function App() {
+  const [postLink, setPostLink] = useState("");
+
+  const onPostClick = (link) => {
+    setPostLink(link);
+  };
+
   return (
     <div className="app">
       <Router>
@@ -24,6 +30,7 @@ function App() {
             </div>
             <div className="appPanel">
               <Switch>
+                {postLink && <Route path={`/${postLink}`}>{postLink}</Route>}
                 <Route path="/about">
                   <AboutCard />
                 </Route>
@@ -31,7 +38,7 @@ function App() {
                   <ContactCard />
                 </Route>
                 <Route path="/">
-                  <BlogList blogPosts={blogPosts} />
+                  <BlogList blogPosts={blogPosts} onPostClick={onPostClick} />
                 </Route>
               </Switch>
             </div>
